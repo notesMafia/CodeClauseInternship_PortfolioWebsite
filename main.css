@@ -599,6 +599,24 @@ nav .header-right {
     .container nav .navItems ul li {
         padding: 10px;
     }
+
+    .layer{
+        padding-top: 10px;
+    }
+
+    .layer h5 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .layer p {
+        color: var(--text-color);
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: center;
+        font-weight: 500;
+    }
 }
 
 
