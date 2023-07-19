@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="./Imgaes/icon.png" type="image/x-icon">
+    <title>Dark ShadeZz</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><img src="./Imgaes/logo.png" alt=""></div>
+            <div class="navItems">
+                <ul>
+                    <li><a href="index.html">PhotoGraphy</a></li>
+                    <li><a href="">Artworks</a></li>
+                    <li><a href="" class="port">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <div class="hamburger">
+                    <div><img src="./Imgaes/menu.png" alt=""></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="hau">
+        <div class="MainBody">
+           <h1 class="welcome">Welcome</h1>
+           <h1 class="welcome">Welcome</h1>
+        </div>
+       </div>
+       
+       
+      
+       <script>
+            function myFunction() 
+            {
+                const homeSection = document.getElementById("home");
+                const currentBackgroundImage = homeSection.style.backgroundImage;
+                
+                    if (currentBackgroundImage.includes("sun2.png")) {
+                        homeSection.style.backgroundImage = "url(./Imgaes/sun2-Glass.png)";
+                    } else {
+                        homeSection.style.backgroundImage = "url(./Imgaes/sun2.png)";
+                    }
+            }
+
+        </script>
+        
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <div class="slide">
+                <button class="one" id="hello" onclick="myFunction()">Hello</button>
+                <span class="two">I'm</span>
+            </div>
+            <h1 >Sanjeev</h1>
+            <h3>Front-end Website <span>Designer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi saepe <br> aperiam reiciendis nisi harum! Quas ex est magnam ess</p>
+            <div class="button">
+                <a href="#about" class="btn" >About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./Imgaes/sam2-removebg.png" alt="image 2">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Front-end Website Designer!</h4>
+            <p>I am a highly motivated individual with a Master's degree <br>in Computer Applications (MCA) from Guru Jambheshwar <br>University of Science & Technology, Hisar, Haryana. <br>I completed my Bachelor's degree in Computer Applications (BCA) <br>from S.S Jain Subodh P.G (Autonomous) College, Jaipur, Rajasthan, <br>Rajasthan University. <br>I have a strong passion for learning, and my quick learning ability <br>allows me to adapt and excel in various areas. In my free time,<br> I enjoy sketching, traveling, and gaming. <br> I am a determined, dedicated, and flexible team player, <br>always ready to contribute effectively.</p>
+            <a href="./docs/SanjeevKumarResume(2023) .pdf" class="btn" target="_blank">My Resume</a>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2><span>Latest</span> Projects</h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="./Imgaes/notesMafia.png" alt="noesMafia">
+                <div class="layer">
+                    <h5>NOTES-MAFIA</h5>
+                    <p>This is a specially designed website for quality notes for GJU University students.</p>
+                    <a href="https://notesmafia.github.io/notesmafia/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./Imgaes/ssportal.png" alt="Student-Portal">
+                <div class="layer">
+                    <h5>Student Study Portal</h5>
+                    <p>This website assists in studying and helps in focusing without distractions.</p>
+                    <a href="https://app.mathmindtrick.xyz/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navItems = document.querySelector(".navItems");
+        hamburger.onclick = function() {
+            navItems.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
