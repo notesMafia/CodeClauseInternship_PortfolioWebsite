@@ -723,3 +723,23 @@ nav .header-right {
         font-weight: 500;
     }
 }
+@media only screen and (max-width: 400px) {
+   
+    .layer{
+        padding-top: 10px;
+    }
+
+    .layer h5 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .layer p {
+        color: var(--text-color);
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: center;
+        font-weight: 500;
+    }
+}
