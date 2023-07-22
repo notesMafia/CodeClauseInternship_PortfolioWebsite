@@ -207,6 +207,7 @@ section .portfolio {
     color: var(--text-color);
     line-height: 1.1;
     margin: 0 0 8px;
+    
 } 
 
   
@@ -454,8 +455,8 @@ section .portfolio {
 
 .container {
     display: block;
-    width: 100%;
-    height: 10vh;
+    /* width: 100%;
+    height: 10vh; */
     z-index: 1000;
 }
 
@@ -694,3 +695,7 @@ nav .header-right {
  }
 }
 
+.home h1{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}

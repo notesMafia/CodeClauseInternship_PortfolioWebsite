@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Imgaes/icon.webp" type="image/x-icon">
+    <title>DS PhotoGraphy</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="navcontainer">
+        <nav>
+            <div class="logo"><img src="./Imgaes/logo.webp" alt=""></div>
+            <div class="navItems">
+                <ul>
+                    <li><a href="photo.html">PhotoGraphy</a></li>
+                    <li><a href="art.html">Artworks</a></li>
+                    <li><a href="index.html" class="port">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <div class="hamburger">
+                    <div><img src="./Imgaes/menu.webp" alt=""></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="body">
+    <div class="gallery">
+        <div class="gallery-container">
+            <img src="./photos/img (1).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-1" data-index="1">
+            <img src="./photos/img (2).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-2" data-index="2">
+            <img src="./photos/img (3).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-3" data-index="3">
+            <img src="./photos/img (4).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-4" data-index="4">
+            <img src="./photos/img (5).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-5" data-index="5">
+            <img src="./photos/img (6).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-6" data-index="6">
+            <img src="./photos/img (7).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-7" data-index="7">
+            <img src="./photos/img (8).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-8" data-index="8">
+            <img src="./photos/img (9).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-9" data-index="9">
+            <img src="./photos/img (10).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-10" data-index="10">
+            <img src="./photos/img (11).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-11" data-index="11">
+            <img src="./photos/img (12).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-12" data-index="12">
+            <img src="./photos/img (13).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-13" data-index="13">
+            <img src="./photos/img (14).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-14" data-index="14">
+            <img src="./photos/img (15).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-15" data-index="15">
+            <img src="./photos/img (16).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-16" data-index="16">
+            <img src="./photos/img (17).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-17" data-index="17">
+            <img src="./photos/img (18).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-18" data-index="18">
+            <img src="./photos/img (19).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-19" data-index="19">
+            <img src="./photos/img (20).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-20" data-index="20">
+            <img src="./photos/img (21).webp"  onclick="openOriginalImage(this.src)" class="gallery-item gallery-item-21" data-index="21">
+           
+           
+
+
+        </div>
+        <div class="gallery-controls"></div>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+         function openOriginalImage(src) {
+            // Check if the image is already in WebP format
+            if (src.toLowerCase().endsWith(".webp")) {
+                // Replace .webp with .jpg
+                const originalSrc = src.replace(/\.webp$/, ".jpg");
+                
+                // Open the original image in a new tab
+                window.open(originalSrc, "_blank");
+            }
+        }
+    </script>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navItems = document.querySelector(".navItems");
+    hamburger.onclick = function() {
+        navItems.classList.toggle("active");
+    }
+</script>
+    </div>
+</body>
+</html>
